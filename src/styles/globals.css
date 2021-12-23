@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply h-7 hover:scale-110 cursor-pointer transition-all duration-150 ease-out;
+  }
+
+  .navBtn {
+    @apply hidden text-black-light h-6 md:inline-flex cursor-pointer transition-all duration-150 ease-out hover:scale-125;
+  }
+
+  .styled-input {
+    @apply rounded mb-2 border border-gray-primary text-sm text-gray-base w-full mr-3 py-5 px-4 h-2;
+  }
+}
