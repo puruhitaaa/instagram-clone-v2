@@ -7,7 +7,7 @@ if (!getApps.length) {
     initializeApp(
       {
         credential: cert({
-          privateKey: serviceAccount.private_key,
+          privateKey: process.env.SERVICE_ACC_PRIVATE_KEY,
           clientEmail: serviceAccount.client_email,
           projectId: serviceAccount.project_id,
         }),
